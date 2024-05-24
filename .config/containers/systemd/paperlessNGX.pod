@@ -2,4 +2,6 @@
 Description=Paperless NGX Pod
 [Pod]
 PublishPort=8000:8000
-
+[Install]
+# Start by default on boot
+WantedBy=multi-user.target default.target
