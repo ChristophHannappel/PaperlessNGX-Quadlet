@@ -1,0 +1,10 @@
+[Unit]
+Description=Postgres for Paperless NGX
+
+[Container]
+Pod=paperlessNGX.pod
+Image=docker.io/library/postgres:15
+Environment=POSTGRES_DB=paperless
+Environment=POSTGRES_USER=paperless
+Environment=POSTGRES_PASSWORD=trommaNelly
+Volume=paperless-postgres-data.volume:/var/lib/postgresql/data

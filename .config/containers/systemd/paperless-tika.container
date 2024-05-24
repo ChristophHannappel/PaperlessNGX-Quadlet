@@ -1,0 +1,6 @@
+[Unit]
+Description=tika for Paperless NGX
+
+[Container]
+Pod=paperlessNGX.pod
+Image=ghcr.io/paperless-ngx/tika:latest

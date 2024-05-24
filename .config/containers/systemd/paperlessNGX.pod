@@ -1,0 +1,5 @@
+[Unit]
+Description=Paperless NGX Pod
+[Pod]
+PublishPort=8000:8000
+

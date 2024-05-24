@@ -1,0 +1,7 @@
+[Unit]
+Description=Redis for Paperless NGX
+
+[Container]
+Pod=paperlessNGX.pod
+Image=docker.io/library/redis:7
+Volume=paperless-redis-data.volume:/data

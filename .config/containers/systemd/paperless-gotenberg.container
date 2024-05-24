@@ -1,0 +1,8 @@
+[Unit]
+Description=Gotenberg for Paperless NGX
+
+[Container]
+Pod=paperlessNGX.pod
+Image=docker.io/gotenberg/gotenberg:7.10
+Exec=gotenberg --chromium-disable-javascript=true --chromium-allow-list=file:///tmp/.*
+

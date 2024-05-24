@@ -1,0 +1,4 @@
+[Unit]
+Description=Redis for Paperless NGX
+
+[Volume]
