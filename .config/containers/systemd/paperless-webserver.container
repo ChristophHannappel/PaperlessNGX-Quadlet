@@ -9,7 +9,7 @@ Environment=PAPERLESS_DBHOST=127.0.0.1
 Environment=PAPERLESS_TIKA_ENABLED=1
 Environment=PAPERLESS_TIKA_GOTENBERG_ENDPOINT=http:127.0.0.1:3000
 Environment=PAPERLESS_TIKA_ENDPOINT=http://127.0.0.1:9998
-Environment=PAPERLESS_OCR_LANGUAGES=deu
+Environment=PAPERLESS_OCR_LANGUAGES=enu
 Volume=paperless-webserver-data.volume:/usr/src/paperless/data
 Volume=paperless-webserver-media.volume:/usr/src/paperless/media
 Volume=paperless-webserver-export.volume:/usr/src/paperless/export
