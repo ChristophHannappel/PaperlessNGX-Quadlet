@@ -9,5 +9,5 @@ Tested with Fedora Workstation 40
 2. Change the Password at `paperless-postgres.container`
 3. Run `systemctl --user daemon-reload`
 4. Run the container with `systemctl --user start paperless-pod.service`
-5. Create a Superuser with podman exec -it systemd-paperless-webserver python manage.py createsuperuser
+5. Create a Superuser with `podman exec -it systemd-paperless-webserver python manage.py createsuperuser`
 6. Open the PaperlessNGX Interface with your Browser http://127.0.0.1:8000 or http://serverip:8000
