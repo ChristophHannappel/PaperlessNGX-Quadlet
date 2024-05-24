@@ -6,5 +6,5 @@ Pod=paperlessNGX.pod
 Image=docker.io/library/postgres:15
 Environment=POSTGRES_DB=paperless
 Environment=POSTGRES_USER=paperless
-Environment=POSTGRES_PASSWORD=trommaNelly
+Environment=POSTGRES_PASSWORD=<FancyPassword>
 Volume=paperless-postgres-data.volume:/var/lib/postgresql/data
