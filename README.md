@@ -6,9 +6,10 @@ Tested with Fedora Workstation 40
 
 ## Installation
 1. Copy the files from `.config/container/systemd` to your `~/.config/containers/systemd/` folder
-2. Create a Passwort file with `nano ~/paperless.pass` enter a Password for the Database User
-3. Create a new Podman Secret `podman secret create paperless_dbpass ~/paperless.pass` and delete the password file `rm ~/paperless.pass`
-4. Run `systemctl --user daemon-reload`
-5. Run the container with `systemctl --user start paperlessNGX-pod.service`
-6. Create a Superuser with `podman exec -it systemd-paperless-webserver python manage.py createsuperuser`
-7. Open the PaperlessNGX Interface with your Browser http://127.0.0.1:8000 or http://serverip:8000
+2. Set your Paperless URL as the Environmentvariable PAPERLESS_URL at `.config/containers/systemd/paperless-webserver.container`
+3. Create a Passwort file with `nano ~/paperless.pass` enter a Password for the Database User
+4. Create a new Podman Secret `podman secret create paperless_dbpass ~/paperless.pass` and delete the password file `rm ~/paperless.pass`
+5. Run `systemctl --user daemon-reload`
+6. Run the container with `systemctl --user start paperlessNGX-pod.service`
+7. Create a Superuser with `podman exec -it systemd-paperless-webserver python manage.py createsuperuser`
+8. Open the PaperlessNGX Interface with your Browser http://127.0.0.1:8000 or http://serverip:8000
