@@ -6,6 +6,7 @@ Pod=paperlessNGX.pod
 Image=ghcr.io/paperless-ngx/paperless-ngx:latest
 Environment=PAPERLESS_REDIS=redis://127.0.0.1:6379
 Environment=PAPERLESS_DBHOST=127.0.0.1
+Environment=PAPERLESS_DBNAME=<name>
 Environment=PAPERLESS_DBUSER=paperless
 Environment=PAPERLESS_DBPASS=<password>
 Environment=PAPERLESS_TIKA_ENABLED=1
