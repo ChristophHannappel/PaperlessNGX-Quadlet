@@ -8,7 +8,7 @@ Environment=PAPERLESS_REDIS=redis://127.0.0.1:6379
 Environment=PAPERLESS_DBHOST=127.0.0.1
 Environment=PAPERLESS_DBNAME=paperless
 Environment=PAPERLESS_DBUSER=paperless
-Environment=PAPERLESS_DBPASS=<password>
+Secret=paperless_dbpass,type=env,target=PAPERLESS_DBPASS
 Environment=PAPERLESS_TIKA_ENABLED=1
 Environment=PAPERLESS_TIKA_GOTENBERG_ENDPOINT=http:127.0.0.1:3000
 Environment=PAPERLESS_TIKA_ENDPOINT=http://127.0.0.1:9998
